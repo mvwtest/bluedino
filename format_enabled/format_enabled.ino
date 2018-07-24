@@ -1,64 +1,93 @@
 #include <SoftwareSerial.h> // Include SoftwareSerial library
-                            // Inlcuir libreria SoftwareSerial
-SoftwareSerial bt(5, 4);    // Create connection to bluetooth module | PIN 5 as RX, PIN 4 as TX
-                            // Crea conexión al módulo bluetooth | PIN 5 como RX, PIN 4 como TX
+SoftwareSerial bt(3, 2);    // Create connection to bluetooth module  | PIN 3 as RX, PIN 2 as TX
 
-String command;             // Variable que acumula el mensaje tipo String
-char check;                 // Variable que verifica si el mensaje es enviado desde BlueDuino
-int id;                     // Variable que recibe el el modo [Analog = 'A', Digital = 'D', Joystick = 'J', Terminal = 'T']
-int pin;                    // Variable que recibe el pin
-int value;                  // Variable que recibe el valor para asignar al pin
+// ** Variables **
+char tmp;                   // Stores a character of the hole message | Checks if the message comes from BlueDuino, the mode and where the message ends
+int pin;                    // Stores the value of the pin            | Used by analog write and digital write
+int value;                  // Stores the analog value                | Used by anaog write
+String message;             // Stores the message without the format  | Used by digital, terminal and joystick
 
 void setup() {
   Serial.begin(9600);
-  bt.begin(9600);           // Iniciar comunicación serial con el módulo bluetooth
+  bt.begin(9600);           // Serial communication with the buetooth module
 }
 
 void loop() {
-  // If there's no data return
-  if (bt.available() < 1) return;
+  // Empty message variable
+  message = "";
 
-  // If 
-  check = bt.read();
-  if (check != '[') return;
+  // If there's no data return to te loop
+  if (!bt.available()) return;
 
+  /* If there's data it must be in one of the following formats
+   *      Format      :     Mode
+   *  [A.PIN.MESSAGE] : analog write
+   *  [D.PIN.MESSAGE] : digital write
+   *  [J.MESSAGE]     : joystick
+   *  [T.MESSAGE]     : terminal
+  */
+
+  // Read the first character of the message, must be '['
+  tmp = bt.read();
+  if (tmp != '[') 
+    return;
+  else
+    Serial.println("Format is not enabled, or message is not from BlueDuino");
   delay(5);
-  check = bt.read();
 
-  String message;
-  char tmp;
+  // Read the second character of the message
+  tmp = bt.read();
   
-  switch(check){
-    case 'A':
+  // Check for each case, you can use if as well
+  switch (tmp){
+    case 'A': // Message from Analog write mode
+      // Read the pin and value
       pin = bt.parseInt();
       value = bt.parseInt();
-      Serial.println("Pin: " + String(pin) + " | Value: " + String(value));
+      // Your code
+      Serial.println("Pin: " + String(pin) + " | Value: " + String(value)); // Optional, large messages might alter the readed values
       return;
-    case 'D':
+    case 'D': // Message from Digital write mode
+      // Read the pin and get the message
       pin = bt.parseInt();
-      delay(5);
-      bt.read();
-      while(bt.available() > 0){
-        delay(5);
-        tmp = bt.read();
-        if (tmp == ']' && (bt.available() == 0))
-          break;
-        message += tmp;
-      }
-      Serial.println("Message: " + message);
+      message = get_message();
+
+      // Your code
+      Serial.println("Pin: " + String(pin) + " | Value: " + message); // Optional, large messages might alter the readed values
       return;
-    case 'T':
-      delay(5);
-      bt.read();
-      while(bt.available() > 0){
-        delay(5);
-        tmp = bt.read();
-        if (tmp == ']' && (bt.available() == 0))
-          break;
-        message += tmp;
-      }
-      Serial.println("Message: " + message);
+    case 'J': // Message from Joystick mode
+      message = get_message();
+      
+      // Your code
+      Serial.println(message); // Optional, large messages might alter the readed values
+      return;
+    case 'T': // Message from Terminal mode
+      message = get_message();
+      
+      // Your code
+      Serial.println(message); // Optional, large messages might alter the readed values
       return;
   }
 }
 
+// Return the message without format
+String get_message(){
+  String text;
+  char aux;
+  // Read the first character to avoid adding '.' as the first character
+  bt.read();
+  delay(5);
+  
+  while(bt.available() > 0){
+    // Read the next character
+    aux = bt.read();
+    delay(5);
+    // If it's the last character break the loop to avoid adding ']' as the last character
+    if (aux == ']' && bt.available() == 0) break;
+    // Add the character to the string
+    text += aux;
+  }
+
+  // Return the message
+  return text;
+}
