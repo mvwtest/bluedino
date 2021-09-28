@@ -9,9 +9,9 @@ Easily integrate bluethooth into your projects with BlueDuino App.
 |Mode|Settings|
 |:-|:-|
 |Terminal|username: `blueduino`|
-|Digital switch|on-message: `ON`, on-message: `OFF`|
+|Digital switch|on-message: `ON`, off-message: `OFF`|
 |Analog sliders|range: `0-255`|
-|Joystick|supports: `key-pressed`, `key-released` see [here](#joystick-settings)|
+|Joystick|supports key-pressed and key-realeased, see: `[here](#joystick-settings)`|
 ### Terminal
 Send and receive messages using this simple terminal.
 ### Digital switch
