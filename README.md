@@ -31,7 +31,7 @@ Use this simple joystick to control your projects.
 #### Key values
 ![joystick-settings](.src/screenshots/settings-joystick.jpg)
 ## Getting started
-To get started, flash an [example sketch](example) and connect your blurtooth module, once this is done you should be able to interact with your bluetooth module using BlueDino.
+To get started, flash an [example sketch](example/example.ino) and connect your blurtooth module, once this is done you should be able to interact with your bluetooth module using BlueDino.
 1. Open the app and grand bluetooth permission
 2. Press the find icon to search for your device
 3. Select your device

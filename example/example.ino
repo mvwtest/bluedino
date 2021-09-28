@@ -40,7 +40,7 @@ void loop() {
   Serial.println(message);
 }
 
-// Return the message without format
+// Return the received message
 String get_message(){
   String text;
   char aux;
