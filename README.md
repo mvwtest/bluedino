@@ -13,17 +13,25 @@ Easily integrate bluetooth into your projects with BlueDino App.
 |Analog sliders|range: `0-255`|
 |Joystick|[values](#key-values): `key-pressed`, `key-realeased` |
 ### Terminal
-Send and receive messages using this simple terminal.
+Send and receive messages using this simple terminal.  
+
+![digital](.src/screenshots/terminal-1.jpg)
 ### Digital switch
-Send customlizable on and off messages.
+Send customlizable on and off messages.  
+
+![digital](.src/screenshots/digital.jpg)
 ### Analog sliders
-Send a range of values using sliders.
+Send a range of values using sliders.  
+
+![analog](.src/screenshots/analog.jpg)
 ### Joystick
-Use this simple joystick to control your projects.
+Use this simple joystick to control your projects.  
+
+![joystick-settings](.src/screenshots/joystick.jpg)
 #### Key values
 ![joystick-settings](.src/screenshots/settings-joystick.jpg)
 ## Getting started
-To get started, flash an [example sketch](#examples-using-arduino) and connect your blurtooth module, once this is done you should be able to interact with your bluetooth module using BlueDino.
+To get started, flash an [example sketch](example) and connect your blurtooth module, once this is done you should be able to interact with your bluetooth module using BlueDino.
 1. Open the app and grand bluetooth permission
 2. Press the find icon to search for your device
 3. Select your device
@@ -31,7 +39,6 @@ To get started, flash an [example sketch](#examples-using-arduino) and connect y
 
 You should be able to see the messages in the Arduino IDE serial monitor.
 ## Global settings
-This are the global settings that make BlueDino App highly customizable.
-## Examples using Arduino IDE
-### Send data
-### Send and receive data
+This are the global settings that make BlueDino App highly customizable.  
+
+![global-settings](.src/screenshots/settings-global.jpg)
