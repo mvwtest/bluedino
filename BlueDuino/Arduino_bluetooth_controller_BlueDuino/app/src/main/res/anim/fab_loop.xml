@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/bounce_interpolator"
+    android:fillAfter="true">
+
+    <translate
+        android:duration="150"
+        android:fromYDelta="0%p"
+        android:toYDelta="-5%p"
+        android:interpolator="@android:anim/accelerate_interpolator"/>
+
+    <translate
+        android:startOffset="80"
+        android:duration="350"
+        android:fromYDelta="0%p"
+        android:toYDelta="5%p"
+        android:interpolator="@android:anim/accelerate_interpolator"/>
+
+    <rotate
+        android:startOffset="444"
+        android:duration="1000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:repeatCount="infinite" />
+
+    <!--    Animations
+    <translate
+        android:duration="700"
+        android:fromYDelta="-15%p"
+        android:toYDelta="0%p"/>
+
+    <rotate
+        android:startOffset="800"
+        android:duration="1000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:repeatCount="infinite" />
+    **************************************************************************************
+    <translate
+        android:duration="150"
+        android:fromYDelta="0%p"
+        android:toYDelta="-8%p"
+        android:interpolator="@android:anim/accelerate_interpolator"/>
+
+    <translate
+        android:startOffset="80"
+        android:duration="350"
+        android:fromYDelta="0%p"
+        android:toYDelta="8%p"
+        android:interpolator="@android:anim/accelerate_interpolator"/>
+
+    <rotate
+        android:startOffset="250"
+        android:duration="1000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:repeatCount="infinite" />
+        -->
+</set>

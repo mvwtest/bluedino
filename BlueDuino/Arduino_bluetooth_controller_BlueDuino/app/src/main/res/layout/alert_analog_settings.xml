@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="16dp"
+
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="@string/alert_title"
+
+            android:id="@+id/title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="@string/alert_description"
+
+            android:id="@+id/description"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:id="@+id/rl_switch"
+
+            android:layout_centerHorizontal="true">
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alert_disable_pin"
+
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="17sp"
+                android:id="@+id/switch_disable_pin"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_switch"
+            android:layout_centerHorizontal="true"
+
+            android:id="@+id/rl_edit_text">
+
+            <EditText
+                android:id="@+id/pin"
+                android:layout_width="120dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:ems="10"
+                android:hint="@string/alert_hint_pin"
+                android:imeOptions="actionNext"
+                android:inputType="textUri|textPassword"
+                android:maxLength="8"
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textColorHint="?android:attr/textColorHint" />
+
+            <EditText
+                android:id="@+id/max"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_toRightOf="@+id/pin"
+                android:ems="10"
+                android:hint="@string/alert_hint_max"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textColorHint="?android:attr/textColorHint" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

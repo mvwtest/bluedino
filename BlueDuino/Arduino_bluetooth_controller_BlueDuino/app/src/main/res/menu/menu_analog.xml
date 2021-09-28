@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/holo_edit"
+        android:title="@string/action_title_pencil"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:title="@string/action_show_output"
+                android:id="@+id/action_output"/>
+            <item
+                android:title="@string/action_only_rgb"
+                android:id="@+id/action_seek_bar"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/action_info"
+        android:id="@+id/action_info" />
+    <item
+        android:title="@string/action_example"
+        android:id="@+id/action_example"/>
+    <item
+        android:title="@string/action_global_settings"
+        android:id="@+id/action_global_settings"/>
+</menu>

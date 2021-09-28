@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="16dp"
+
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="@string/alert_title"
+
+            android:id="@+id/title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:text="@string/alert_description"
+
+            android:id="@+id/description"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:id="@+id/rl_switch"
+
+            android:layout_centerHorizontal="true">
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alert_disable_pin"
+
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="17sp"
+                android:id="@+id/switch_disable_pin"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_switch"
+            android:layout_centerHorizontal="true"
+
+            android:id="@+id/rl_edit_text">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:id="@+id/rl_pin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="17sp"
+                    android:text="@string/alert_pin"
+                    android:id="@+id/tv_pin"/>
+
+                <EditText
+                    android:id="@+id/pin"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_toRightOf="@+id/tv_pin"
+                    android:ems="10"
+                    android:hint="@string/alert_hint_pin"
+
+                    android:imeOptions="actionNext"
+                    android:inputType="textUri|textVisiblePassword|textNoSuggestions"
+
+                    android:maxLength="8"
+                    android:textAlignment="center"
+
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textColorHint="?android:attr/textColorHint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rl_pin"
+
+                android:id="@+id/rl_down">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="17sp"
+                    android:text="@string/alert_on"
+                    android:id="@+id/tv_down"/>
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_down"
+
+                    android:maxLength="8"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textAlignment="center"
+
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/alert_hint_on"
+                    android:id="@+id/on"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/rl_down"
+
+                android:id="@+id/rl_up">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="17sp"
+                    android:text="@string/alert_off"
+                    android:id="@+id/tv_up"/>
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_up"
+
+                    android:maxLength="8"
+                    android:inputType="textNoSuggestions|textVisiblePassword"
+
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textAlignment="center"
+
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/alert_hint_off"
+                    android:id="@+id/off"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

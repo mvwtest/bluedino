@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/holo_settings"
+        android:title="@string/action_title_gear"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="@string/action_info"
+        android:id="@+id/action_info"/>
+    <item
+        android:title="@string/action_example"
+        android:id="@+id/action_example"/>
+    <item
+        android:title="@string/action_global_settings"
+        android:id="@+id/action_global_settings"/>
+</menu>

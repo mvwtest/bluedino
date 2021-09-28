@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aal.arduino_bluetooth_controller_blueduino.JoystickConfigure"
+    tools:showIn="@layout/activity_joystick_configure">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                android:text="@string/action_show_output"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw_output"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:rotation="90"
+
+                    android:src="@drawable/joystick_left_icon"
+                    android:background="@drawable/round_key_button"
+
+                    android:id="@+id/iv_up"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_up"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+
+                    android:id="@+id/et_up"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_up"
+                    android:layout_below="@+id/et_up"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_up_up"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:rotation="180"
+                    android:src="@drawable/joystick_left_icon"
+                    android:background="@drawable/round_key_button"
+
+                    android:id="@+id/iv_right"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_right"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+
+                    android:id="@+id/et_right"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_right"
+                    android:layout_below="@+id/et_right"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_right_up"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:rotation="-90"
+                    android:src="@drawable/joystick_left_icon"
+                    android:background="@drawable/round_key_button"
+
+                    android:id="@+id/iv_down"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_down"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+
+                    android:id="@+id/et_down"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_down"
+                    android:layout_below="@+id/et_down"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_down_up"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/joystick_left_icon"
+                    android:background="@drawable/round_key_button"
+
+                    android:id="@+id/iv_left"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_left"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+
+                    android:id="@+id/et_left"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_left"
+                    android:layout_below="@+id/et_left"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_left_up"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/joystick_triangle"
+                    android:background="@drawable/circular_button"
+
+                    android:id="@+id/iv_w"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_w"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_w"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_w"
+                    android:layout_below="@+id/et_w"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_w_up"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/joystick_circle"
+                    android:background="@drawable/circular_button"
+
+                    android:id="@+id/iv_d"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_d"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+
+                    android:id="@+id/et_d"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_d"
+                    android:layout_below="@+id/et_d"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_d_up"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/joystick_x"
+                    android:background="@drawable/circular_button"
+
+                    android:id="@+id/iv_s"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_s"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+
+                    android:id="@+id/et_s"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_s"
+                    android:layout_below="@+id/et_s"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_s_up"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/joystick_square"
+                    android:background="@drawable/circular_button"
+
+                    android:id="@+id/iv_a"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_a"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+
+                    android:id="@+id/et_a"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_a"
+                    android:layout_below="@+id/et_a"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_a_up"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="26dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/joystick_play"
+                    android:background="@drawable/round_button"
+
+                    android:id="@+id/iv_start"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_start"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_start"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_start"
+                    android:layout_below="@+id/et_start"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_start_up"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/joystick_stop"
+                    android:background="@drawable/round_button"
+
+                    android:id="@+id/iv_stop"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_stop"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_pressed"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_stop"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_stop"
+                    android:layout_below="@+id/et_stop"
+                    android:padding="10dp"
+
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionDone"
+
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColorHint="?android:attr/textColorHint"
+                    android:hint="@string/key_released"
+                    android:textAlignment="center"
+
+                    android:id="@+id/et_stop_up"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

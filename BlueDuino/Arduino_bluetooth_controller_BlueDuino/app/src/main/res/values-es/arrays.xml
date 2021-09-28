@@ -1,0 +1,37 @@
+<resources>
+    <!-- Begin/Separator/End message Preference -->
+    <string-array name="end_character_entries">
+        <item>LF</item>
+        <item>Ninguno</item>
+    </string-array>
+
+    <string-array name="begin_character_entries">
+        <item>$</item>
+        <item>\></item>
+        <item>#</item>
+        <item>Ninguno</item>
+    </string-array>
+
+    <string-array name="separator_character_entries">
+        <item>.</item>
+        <item>-</item>
+        <item>_</item>
+        <item>Ninguno</item>
+    </string-array>
+
+    <!-- Mode Activity -->
+    <string-array name="mode_titles">
+        <item>Terminal</item>
+        <item>Digital</item>
+        <item>Análogo</item>
+        <item>Joystick</item>
+    </string-array>
+
+    <string-array name="mode_descriptions">
+        <item>Escribe comandos y envíalos a tu módulo bluetooth.</item>
+        <item>Utiliza este modo como un switch y envía señales de encendido y apagado.</item>
+        <item>Envía señales análogas y personaliza su rango.</item>
+        <item>Un joystick simple con teclas personalizables.</item>
+    </string-array>
+
+</resources>

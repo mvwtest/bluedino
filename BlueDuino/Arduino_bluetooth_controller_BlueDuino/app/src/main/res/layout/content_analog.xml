@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aal.arduino_bluetooth_controller_blueduino.Analog"
+    tools:showIn="@layout/activity_analog">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_content"
+        android:layout_centerInParent="true">
+        <!-- RGB -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/rl_rgb">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="26sp"
+                android:text="@string/rgb"
+                android:id="@+id/tv_rgb"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rgb"
+
+                android:padding="5dp"
+
+                android:id="@+id/rl_r">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:textSize="18sp"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:text="00"
+
+                    android:id="@+id/tv_r_pin"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/r_iv"
+                    android:layout_toRightOf="@+id/tv_r_pin"
+
+                    android:progressTint="@color/colorR"
+                    android:thumbTint="@color/colorR"
+
+                    android:id="@+id/r_sb" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/settings"
+                    android:id="@+id/r_iv"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_r"
+
+                android:padding="5dp"
+
+                android:id="@+id/rl_g">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:textSize="18sp"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:text="00"
+
+                    android:id="@+id/tv_g_pin"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/g_iv"
+                    android:layout_toRightOf="@+id/tv_g_pin"
+
+                    android:progressTint="@color/colorG"
+                    android:thumbTint="@color/colorG"
+
+                    android:id="@+id/g_sb" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/settings"
+                    android:id="@+id/g_iv"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_g"
+
+                android:padding="5dp"
+
+                android:id="@+id/rl_b">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:textSize="18sp"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:text="00"
+
+                    android:id="@+id/tv_b_pin"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/b_iv"
+                    android:layout_toRightOf="@+id/tv_b_pin"
+
+                    android:progressTint="@color/colorB"
+                    android:thumbTint="@color/colorB"
+
+                    android:id="@+id/b_sb"
+                    android:indeterminate="false" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/settings"
+                    android:id="@+id/b_iv"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_b"
+                android:layout_centerHorizontal="true"
+
+                android:padding="5dp"
+
+                android:id="@+id/rl_output">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="16dp"
+
+                    android:background="#000000"
+
+                    android:id="@+id/rgb_iv"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/rgb_iv"
+                    android:layout_centerVertical="true"
+
+                    android:textAlignment="center"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="20sp"
+                    android:text="0"
+
+                    android:id="@+id/tv_output_r"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_output_r"
+                    android:layout_centerVertical="true"
+
+                    android:textAlignment="center"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="20sp"
+                    android:text="0"
+
+                    android:id="@+id/tv_output_g"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_output_g"
+                    android:layout_centerVertical="true"
+
+                    android:textAlignment="center"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="20sp"
+                    android:text="0"
+
+                    android:id="@+id/tv_output_b"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- Analog -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:id="@+id/rl_analog">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="26sp"
+                android:text="@string/analog"
+                android:id="@+id/tv_analog"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_analog"
+
+                android:padding="5dp"
+
+                android:id="@+id/rl_sb">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:textSize="18sp"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:text="0000"
+
+                    android:id="@+id/tv_analog_pin"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/tv_analog_pin"
+                    android:layout_toLeftOf="@+id/settings_iv"
+
+                    android:id="@+id/analog_sb" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/settings"
+                    android:id="@+id/settings_iv"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_content"
+
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="20sp"
+        android:text="0"
+
+        android:id="@+id/tv_general_output"/>
+</RelativeLayout>

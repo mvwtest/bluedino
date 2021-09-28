@@ -1,0 +1,149 @@
+<resources>
+
+    <!-- Devices.xml -->
+    <string name="app_name">BlueDuino</string> <!-- No modificar -->
+    <string name="text_paired">Paired devices</string>
+    <string name="text_unpaired">Unpaired devices</string>
+
+    <string name="no_bond">Your device can´t bond</string>
+
+    <string name="title_activity_terminal">Terminal</string>
+
+    <!-- Devices.java -->
+    <string name="title_popup">Exit</string>
+    <string name="confirm_exit">Are you sure you want to exit?</string>
+    <string name="title_popup_reset">Restore</string>
+    <string name="title_popup_theme">Change theme</string>
+    <string name="confirm_close_app">This will close the app</string>
+    <string name="confirm_change_theme">This will restart the application</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="bonding">Trying to pair</string>
+    <string name="already_discovering">Already discovering</string>
+    <string name="no_devices_found">No devices were found</string>
+
+    <string name="unpaired">Unpaired</string>
+
+    <!-- BluetoothConnection.java -->
+    <string name="title_activity_bluetooth_connection">BlueDuino</string> <!-- No modificar -->
+    <string name="bt_unable">Device unable to use bluetooth</string>
+
+    <!-- Mode.java -->
+    <string name="title_activity_mode">Choose a mode</string>
+
+    <string name="connected">Connected</string>
+    <string name="connection_failed">Connection failed</string>
+
+    <!-- Analog.java -->
+    <string name="title_activity_analog">Analog write</string>
+    <string name="rgb">RGB</string>             <!-- No modificar (Subtitulo para Analog slider) -->
+    <string name="analog">Analog write</string> <!-- No modificar (Subtitulo para Analog slider) -->
+
+    <string name="alert_preview">Preview:</string>
+
+    <!-- Digital.java -->
+    <string name="title_activity_digital">Digital write</string>
+
+    <!-- Joystick.java -->
+    <string name="title_activity_joystick">Joystick</string>
+
+    <!-- JoystickConfigure.java -->
+    <string name="title_activity_joystick_configure">Joystick settings</string>
+    <string name="key_pressed">Key pressed</string>
+    <string name="key_released">Key released</string>
+
+    <!-- Terminal.java -->
+    <string name="hint_message">Type command</string>
+    <string name="empty">Empty message</string>
+
+    <!-- Menus -->
+    <string name="action_example">Code examples</string>
+    <string name="action_info">About</string>
+    <string name="action_global_settings">Settings</string>
+
+    <string name="action_unpair">Unpair</string>
+
+    <string name="action_only_rgb">Show RGB seek bar</string>
+    <string name="action_only_analog">Show default seek bar</string>
+    <string name="action_hide_output">Hide output</string>
+    <string name="action_show_output">Show output</string>
+
+    <string name="action_clear_terminal">Clear terminal</string>
+
+    <string name="action_title_pencil">Edit</string>
+    <string name="action_title_gear">Settings</string>
+
+    <!-- Extras: I don't know its activity-->
+    <string name="disconnected">Disconnected</string>
+    <string name="bt_disabled">Bluetooth has been disabled</string>
+    <string name="connection_lost">Connection lost</string>
+
+    <string name="alert_title">Settings</string>
+    <string name="alert_description">Assign the values to format the output.</string>
+    <string name="alert_disable_pin">Disable pin</string>
+    <string name="alert_hint_pin">PIN</string> <!-- No modificar (pista en input de Analog) * -->
+    <string name="alert_hint_max">MAX</string> <!-- No modificar (pista en input de Analog) * -->
+
+    <string name="alert_pin">Send to pin:\ </string>
+    <string name="alert_on">On message:\ </string>
+    <string name="alert_off">Off message:\ </string>
+    <string name="alert_hint_on">ON</string>   <!-- No modificar (pista en input de Digital) -->
+    <string name="alert_hint_off">OFF</string> <!-- No modificar (pista en input de Digital) -->
+
+    <string name="alert_save">Save</string>
+    <string name="alert_saved">Saved</string>
+    <string name="alert_cancel">Cancel</string>
+    <string name="alert_settings">Settings</string>
+
+    <string name="alert_clear">Clear all fields</string>
+    <string name="alert_reset">Reset settings</string>
+
+    <string name="alert_info_title">About BlueDuino</string>
+    <string name="alert_info_version">Version</string>
+
+    <string name="alert_info_development">Development</string>
+
+    <string name="alert_info_translators">Translators</string>
+
+    <string name="alert_info_e_mail">Send suggestions</string>
+    <string name="e_mail">aguilar.lagunas.arturo@gmail.com</string> <!-- No modificar -->
+
+    <string name="github_url">https://github.com/AguilarLagunasArturo/Getting-data-from-BlueDuino</string> <!-- No modificar -->
+
+    <string name="alert_info_ok">Done</string>
+    <string name="alert_info_toast">Tanks for using this app!</string>
+
+    <string name="title_activity_global_settings">Global settings</string>
+
+    <!-- General Preferences -->
+    <string name="general_header">General</string>
+    <string name="username_title">Username</string>
+    <string name="theme_title">Theme</string>
+    <string name="theme_summary_on">Dark mode</string>
+    <string name="theme_summary_off">Light mode</string>
+    <string name="auto_discover_title">Auto discover</string>
+    <string name="auto_discover_summary">Search for available devices when the app starts</string>
+    <string name="reset_title">Restore all settings</string>
+    <string name="reset_summary">Delete app data, this will close the application for changes to take effect</string>
+
+    <!-- Sending Preferences -->
+    <string name="sending_header">Sending</string>
+    <string name="begin_character_title">Begin character</string>
+    <string name="begin_summary">This character that will be attached at the beginning of all messages</string>
+    <string name="end_character_title">End character</string>
+    <string name="end_summary">This character that will be attached at the end of all messages</string>
+    <string name="separator_character_title">Separator character</string>
+    <string name="separator_summary">This character will separate the pin number from its value if needed</string>
+    <string name="send_rate_title">Send rate</string>
+    <string name="send_rate_summary">Define the rate in which the sliders send data</string>
+
+    <!-- Receiving Preferences -->
+    <string name="receiving_header">Receiving</string>
+    <string name="auto_scroll_title">Scroll</string>
+    <string name="auto_scroll_summary">Auto scroll when receiving data</string>
+    <string name="receive_rate_title">Receive rate</string>
+    <string name="receive_rate_summary">Define the rate in which the terminal fetch data</string>
+
+</resources>

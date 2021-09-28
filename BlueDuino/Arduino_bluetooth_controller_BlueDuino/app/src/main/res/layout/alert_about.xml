@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+
+            android:padding="16dp"
+
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="@string/alert_info_title"
+            android:textColor="?android:attr/textColorPrimary"
+
+            android:id="@+id/tv_title"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_title"
+            android:fillViewport="false">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:text="@string/alert_info_version"
+                    android:textColor="?android:attr/textColorPrimary"
+
+                    android:id="@+id/tv_version"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_version"
+                    android:layout_margin="10dp"
+
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:text="@string/alert_info_development"
+                    android:textColor="?android:attr/textColorPrimary"
+
+                    android:id="@+id/tv_development"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_development"
+                    android:layout_marginBottom="10dp"
+
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:text="names"
+                    android:textColor="?android:attr/textColorSecondary"
+
+                    android:id="@+id/tv_developers"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_developers"
+                    android:layout_margin="10dp"
+
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:text="@string/alert_info_translators"
+                    android:textColor="?android:attr/textColorPrimary"
+
+                    android:id="@+id/tv_translation"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_translation"
+                    android:layout_marginBottom="10dp"
+
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:text="names"
+                    android:textColor="?android:attr/textColorSecondary"
+
+                    android:id="@+id/tv_translators"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_translators"
+                    android:layout_margin="10dp"
+
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:text="@string/alert_info_e_mail"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:id="@+id/tv_suggestion"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv_suggestion"
+                    android:layout_marginBottom="10dp"
+
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:textSize="16dp"
+                    android:text="e-mail"
+                    android:textColor="@color/colorAccent"
+
+                    android:id="@+id/tv_e_mail"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_e_mail"
+
+
+                    android:src="@mipmap/ic_launcher"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

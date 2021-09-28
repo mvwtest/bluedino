@@ -1,0 +1,81 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/general_header">
+
+        <EditTextPreference
+            app:defaultValue="@string/app_name"
+            app:key="username"
+            app:title="@string/username_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="theme"
+            app:title="@string/theme_title"
+            app:summaryOff="@string/theme_summary_off"
+            app:summaryOn="@string/theme_summary_on" />
+
+        <SwitchPreferenceCompat
+            app:key="auto_discover"
+            app:summary="@string/auto_discover_summary"
+            app:title="@string/auto_discover_title"
+            app:defaultValue="true"/>
+
+        <Preference
+            app:key="reset"
+            app:title="@string/reset_title"
+            app:summary="@string/reset_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sending_header">
+
+        <ListPreference
+            app:key="begin_character"
+            app:defaultValue="\"
+            app:entries="@array/begin_character_entries"
+            app:entryValues="@array/begin_character_values"
+            app:title="@string/begin_character_title"
+            app:summary="@string/begin_summary"/>
+
+        <ListPreference
+            app:key="end_character"
+            app:defaultValue="\"
+            app:entries="@array/end_character_entries"
+            app:entryValues="@array/end_character_values"
+            app:title="@string/end_character_title"
+            app:summary="@string/end_summary"/>
+
+        <ListPreference
+            app:key="separator_character"
+            app:defaultValue="."
+            app:entries="@array/separator_character_entries"
+            app:entryValues="@array/separator_character_values"
+            app:title="@string/separator_character_title"
+            app:summary="@string/separator_summary"/>
+
+        <ListPreference
+            app:key="send_rate"
+            app:defaultValue="20"
+            app:entryValues="@array/send_rate_values"
+            android:entries="@array/send_rate_entries"
+            app:summary="@string/send_rate_summary"
+            app:title="@string/send_rate_title"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/receiving_header">
+        <SwitchPreferenceCompat
+            app:key="auto_scroll"
+            app:defaultValue="true"
+            app:summary="@string/auto_scroll_summary"
+            app:title="@string/auto_scroll_title"/>
+
+        <ListPreference
+            app:key="receive_rate"
+            app:defaultValue="150"
+            app:entryValues="@array/receive_rate_values"
+            android:entries="@array/receive_rate_entries"
+            app:summary="@string/receive_rate_summary"
+            app:title="@string/receive_rate_title"/>
+    </PreferenceCategory>
+</PreferenceScreen>

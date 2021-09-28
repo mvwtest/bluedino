@@ -1,0 +1,37 @@
+<resources>
+    <!-- Begin/Separator/End message Preference -->
+    <string-array name="end_character_entries">
+        <item>LF</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="begin_character_entries">
+        <item>$</item>
+        <item>\></item>
+        <item>#</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="separator_character_entries">
+        <item>.</item>
+        <item>-</item>
+        <item>_</item>
+        <item>None</item>
+    </string-array>
+
+    <!-- Mode Activity -->
+    <string-array name="mode_titles">
+        <item>Terminal</item>
+        <item>Digital</item>
+        <item>Analogue</item>
+        <item>Joystick</item>
+    </string-array>
+
+    <string-array name="mode_descriptions">
+        <item>Ecrire des commandes et les envoyer à votre module Bluetooth.</item>
+        <item>Utilisez ce mode comme commutateur et envoyez des signaux.</item>
+        <item>Envoyer des signaux analogiques et personnaliser les limites par défaut [0 ~ 255].</item>
+        <item>Un simple joystick avec personnalisable.</item>
+    </string-array>
+
+</resources>

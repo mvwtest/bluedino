@@ -1,0 +1,149 @@
+﻿<resources>
+
+    <!-- Devices.xml -->
+    <string name="app_name">BlueDuino</string> <!-- No modificar -->
+    <string name="text_paired">Dispositifs liés</string>
+    <string name="text_unpaired">Dispositifs disponibles</string>
+
+    <string name="no_bond">Votre dispositifs ne peut pas être lié</string>
+
+    <string name="title_activity_terminal">Terminal</string>
+
+    <!-- Devices.java -->
+    <string name="title_popup">Sortir</string>
+    <string name="confirm_exit">¿Tu es sûr?</string>
+    <string name="title_popup_reset">Restaurar</string>
+    <string name="title_popup_theme">Cambiar tema</string>
+    <string name="confirm_close_app">Esto cerrara la aplicacion</string>
+    <string name="confirm_change_theme">Esto reiniciara la aplicacion</string>
+
+    <string name="yes">OUI</string>
+    <string name="no">NON</string>
+
+    <string name="bonding">lié</string>
+    <string name="already_discovering">Chercher</string>
+    <string name="no_devices_found">Aucun dispositifs trouvé</string>
+
+    <string name="unpaired">Sans lien</string>
+
+    <!-- BluetoothConnection.java -->
+    <string name="title_activity_bluetooth_connection">BlueDuino</string> <!-- No modificar -->
+    <string name="bt_unable">Votre diapositifs ne peut pas utiliser Bluetooth</string>
+
+    <!-- Mode.java -->
+    <string name="title_activity_mode">Sélectionner un mode</string>
+
+    <string name="connected">Connecté</string>
+    <string name="connection_failed">La connexion a échoué</string>
+
+    <!-- Analog.java -->
+    <string name="title_activity_analog">Analogue</string>
+    <string name="rgb">RGB</string>             <!-- No modificar (Subtitulo para Analog slider) -->
+    <string name="analog">Analog write</string> <!-- No modificar (Subtitulo para Analog slider) -->
+
+    <string name="alert_preview">Prévisualisation</string>
+
+    <!-- Digital.java -->
+    <string name="title_activity_digital">Digital</string>
+
+    <!-- Joystick.java -->
+    <string name="title_activity_joystick">Joystick</string>
+
+    <!-- JoystickConfigure.java -->
+    <string name="title_activity_joystick_configure">Paramètres de Joystick</string>
+    <string name="key_pressed">En appuyant sur la clé</string>
+    <string name="key_released">Lors de la libération de la clé</string>
+
+    <!-- Terminal.java -->
+    <string name="hint_message">Ecrire des instructions</string>
+    <string name="empty">Message vide</string>
+
+    <!-- Menus -->
+    <string name="action_example">¿Comment utiliser?</string>
+    <string name="action_info">À propos de</string>
+    <string name="action_global_settings">Global settings</string>
+
+    <string name="action_unpair">Dissocier</string>
+
+    <string name="action_only_rgb">Affiche les barres RGB</string>
+    <string name="action_only_analog">Afficher le bar original</string>
+    <string name="action_hide_output">Masquer la sortie</string>
+    <string name="action_show_output">Afficher la sortie</string>
+
+    <string name="action_clear_terminal">Limpiar terminal</string>
+
+    <string name="action_title_pencil">Editar</string>
+    <string name="action_title_gear">Ajustes</string>
+
+    <!-- Extras: I don't know its activity-->
+    <string name="disconnected">Déconnecté</string>
+    <string name="bt_disabled">Bluetooth a été désactivé</string>
+    <string name="connection_lost">Connection lost</string>
+
+    <string name="alert_title">Paramètres</string>
+    <string name="alert_description">Configurez pour formater les messages qui seront envoyés.</string>
+    <string name="alert_disable_pin">No pin</string>
+    <string name="alert_hint_pin">PIN</string> <!-- No modificar (pista en input de Analog) * -->
+    <string name="alert_hint_max">MAX</string> <!-- No modificar (pista en input de Analog) * -->
+
+    <string name="alert_pin">Envoyer au port:\ </string>
+    <string name="alert_on">Allumage:\ </string>
+    <string name="alert_off">Éteint:\ </string>
+    <string name="alert_hint_on">ON</string>    <!-- No modificar (pista en input de Digital) -->
+    <string name="alert_hint_off">OFF</string>  <!-- No modificar (pista en input de Digital) -->
+
+    <string name="alert_save">Sauvegarder</string>
+    <string name="alert_saved">Saved</string>
+    <string name="alert_cancel">Annuler</string>
+    <string name="alert_settings">Paramètres</string>
+
+    <string name="alert_clear">Nettoyer tous les champs</string>
+    <string name="alert_reset">Paramètres d\'origine</string>
+
+    <string name="alert_info_title">à propos de BlueDuino</string>
+    <string name="alert_info_version">Versión</string>
+
+    <string name="alert_info_development">Développé</string>
+
+    <string name="alert_info_translators">Traductores</string>
+
+    <string name="alert_info_e_mail">Envoyer des suggestions</string>
+    <string name="e_mail">aguilar.lagunas.arturo@gmail.com</string> <!-- No modificar -->
+
+    <string name="github_url">https://github.com/AguilarLagunasArturo/Getting-data-from-BlueDuino</string> <!-- No modificar -->
+
+    <string name="alert_info_ok">Vale</string>
+    <string name="alert_info_toast">¡Merci d\'avoir utilisé cette application!</string>
+
+    <string name="title_activity_global_settings">Global settings</string>
+
+    <!-- General Preferences -->
+    <string name="general_header">General</string>
+    <string name="username_title">Nombre de usuario</string>
+    <string name="theme_title">Tema</string>
+    <string name="theme_summary_on">Modo obscuro</string>
+    <string name="theme_summary_off">Modo claro</string>
+    <string name="auto_discover_title">Buscar automaticamente</string>
+    <string name="auto_discover_summary">Buscar dispositivos disponibles al iniciar la aplicación</string>
+    <string name="reset_title">Restaurar todos los ajustes</string>
+    <string name="reset_summary">Elimina los datos de la aplicacion, esto cerrara la aplicacion para que los cambios tomen efecto</string>
+
+    <!-- Sending Preferences -->
+    <string name="sending_header">Al enviar mensajes</string>
+    <string name="begin_character_title">Pimer caracter</string>
+    <string name="begin_summary">Este caracter se concatenará al inicico de cada mensaje</string>
+    <string name="end_character_title">Último caracter</string>
+    <string name="end_summary">Este caracter se concatenará al final de cada mensaje</string>
+    <string name="separator_character_title">Separador</string>
+    <string name="separator_summary">Este caracter se utilizará como separador entre el numero de pin y su valor</string>
+    <string name="send_rate_title">Velocidad</string>
+    <string name="send_rate_summary">Define la velocidad con la que los sliders envian la informacion</string>
+
+    <!-- Receiving Preferences -->
+    <string name="receiving_header">Al recibir informacion</string>
+    <string name="auto_scroll_title">Scroll automatico</string>
+    <string name="auto_scroll_summary">Scroll automatico en terminal</string>
+    <string name="receive_rate_title">Velocidad</string>
+    <string name="receive_rate_summary">Define la velocidad con la que se recibe la informacion</string>
+
+</resources>

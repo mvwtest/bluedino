@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aal.arduino_bluetooth_controller_blueduino.Joystick"
+    tools:showIn="@layout/activity_joystick">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_output"
+            android:textSize="20sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:text=""/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_margin="30dp"
+
+        android:id="@+id/rl_j1">
+
+        <!-- Logic keys -->
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/joystick_left_icon"
+            android:background="@drawable/round_key_button"
+
+            android:id="@+id/bt_left" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+
+            android:rotation="90"
+            android:src="@drawable/joystick_left_icon"
+            android:background="@drawable/round_key_button"
+
+            android:id="@+id/bt_up" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+
+            android:rotation="-90"
+            android:src="@drawable/joystick_left_icon"
+            android:background="@drawable/round_key_button"
+
+            android:id="@+id/bt_down" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            android:rotation="180"
+            android:src="@drawable/joystick_left_icon"
+            android:background="@drawable/round_key_button"
+
+            android:id="@+id/bt_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="30dp"
+
+        android:id="@+id/rl_j2">
+
+        <!-- Logic keys -->
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/joystick_square"
+            android:background="@drawable/circular_button"
+
+            android:id="@+id/bt_a"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+
+            android:src="@drawable/joystick_triangle"
+            android:background="@drawable/circular_button"
+
+            android:id="@+id/bt_w" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+
+            android:src="@drawable/joystick_x"
+            android:background="@drawable/circular_button"
+
+            android:id="@+id/bt_s"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:src="@drawable/joystick_circle"
+            android:background="@drawable/circular_button"
+
+            android:id="@+id/bt_d"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="11dp"
+
+        android:id="@+id/relativeLayout">
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+
+            android:src="@drawable/joystick_play"
+            android:background="@drawable/round_button"
+
+            android:id="@+id/bt_start"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/bt_start"
+            android:layout_margin="5dp"
+
+            android:src="@drawable/joystick_stop"
+            android:background="@drawable/round_button"
+
+            android:id="@+id/bt_stop"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

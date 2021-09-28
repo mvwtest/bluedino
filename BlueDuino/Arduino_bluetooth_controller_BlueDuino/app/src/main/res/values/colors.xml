@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- WIDGETS -->
+    <color name="colorPrimary">#394143</color>
+    <color name="colorPrimaryDark">#313839</color>
+    <color name="colorAccent">#41b2ba</color>
+    <color name="colorBackgroundPopup">@android:color/background_light</color>
+    <color name="colorPrimaryPopup">#101010</color>
+
+    <!-- TERMINAL -->
+    <color name="colorTerminalSendText">@android:color/background_dark</color>
+    <color name="colorTerminalReceiveText">#41b2ba</color>
+
+    <!-- JOYSTICK KEYS -->
+    <color name="colorJoystickKey">#394143</color>
+    <color name="colorJoystickKeyPressed">#c7cfd2</color>
+
+    <color name="colorR">#ea4343</color>
+    <color name="colorG">#3cca45</color>
+    <color name="colorB">#319aa1</color>
+
+    <!-- TEXT
+    <color name="colorPrimaryText">#5B6470</color>
+    <color name="colorSecondaryText">#747e8c</color>
+    <color name="colorHintText">#9aabb1</color>
+    -->
+
+    <!--         WIDGETS ORIGINAL
+    <color name="colorPrimaryO">#41b2ba</color>
+    <color name="colorPrimaryDarkO">#319aa1</color>
+    <color name="colorAccentO">#ffb866</color>
+    -->
+</resources>
