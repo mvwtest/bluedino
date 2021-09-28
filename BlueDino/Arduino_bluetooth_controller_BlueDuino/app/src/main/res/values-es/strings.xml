@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Devices.xml -->
-    <string name="app_name">BlueDuino</string> <!-- No modificar -->
+    <string name="app_name">BlueDino</string> <!-- No modificar -->
     <string name="text_paired">Dispositivos vinculados</string>
     <string name="text_unpaired">Dispositivos disponibles</string>
 
