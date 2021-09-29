@@ -1,6 +1,6 @@
 # BlueDino
 Easily integrate bluetooth into your projects with BlueDino App.
-## Build in modes
+## Built in modes
 - [Terminal](#terminal)
 - [Digital switch](#digital-switch)
 - [Analog sliders](#analog-sliders)
