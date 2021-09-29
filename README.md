@@ -12,6 +12,11 @@ Easily integrate bluetooth into your projects with BlueDino App.
 |Digital switch|on-message: `ON`, off-message: `OFF`|
 |Analog sliders|range: `0-255`|
 |Joystick|[values](#key-values): `key-pressed`, `key-realeased` |
+## Home
+Discover and pair devices.  
+
+![digital](.src/screenshots/home.jpg)
+
 ## Terminal
 Send and receive messages using this simple terminal.  
 
