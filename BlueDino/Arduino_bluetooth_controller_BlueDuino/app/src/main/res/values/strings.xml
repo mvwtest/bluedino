@@ -59,7 +59,7 @@
     <string name="empty">Empty message</string>
 
     <!-- Menus -->
-    <string name="action_example">Code examples</string>
+    <string name="action_example">How to use</string>
     <string name="action_info">About</string>
     <string name="action_global_settings">Settings</string>
 
@@ -110,7 +110,7 @@
     <string name="alert_info_e_mail">Send suggestions</string>
     <string name="e_mail">aguilar.lagunas.arturo@gmail.com</string> <!-- No modificar -->
 
-    <string name="github_url">https://github.com/AguilarLagunasArturo/Getting-data-from-BlueDuino</string> <!-- No modificar -->
+    <string name="github_url">https://github.com/AguilarLagunasArturo/bluedino</string> <!-- No modificar -->
 
     <string name="alert_info_ok">Done</string>
     <string name="alert_info_toast">Tanks for using this app!</string>

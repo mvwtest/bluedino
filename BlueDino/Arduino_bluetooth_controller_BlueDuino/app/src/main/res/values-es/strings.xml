@@ -59,7 +59,7 @@
     <string name="empty">Mensaje vacío</string>
 
     <!-- Menus -->
-    <string name="action_example">Ejemplos</string>
+    <string name="action_example">Documentación</string>
     <string name="action_info">Acerca de</string>
     <string name="action_global_settings">Ajustes</string>
 
