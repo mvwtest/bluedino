@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      #- uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: git clone
         run: git clone https://github.com/AguilarLagunasArturo/bluedino.git
       - name: cd clone
