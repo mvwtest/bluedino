@@ -1,0 +1,29 @@
+name: joystick-mvw
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      #- uses: actions/checkout@v2
+      - name: git clone
+        run: git clone https://github.com/AguilarLagunasArturo/bluedino.git
+      - name: cd clone
+        run: cd bluedino/BlueDino/Arduino_bluetooth_controller_BlueDuino/
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+      - name: Create google-services.json
+        run: echo '${{ secrets.GOOGLE_SERVICES_JSON }}' > app/google-services.json
+
+      - name: Build APK
+        run:  ./gradlew assembleDebug --stacktrace
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v2.3.1
+        with:
+          name: SensorServer-Apk
+          path: bluedino/BlueDino/Arduino_bluetooth_controller_BlueDuino//build/outputs/apk/debug/app-debug.apk
